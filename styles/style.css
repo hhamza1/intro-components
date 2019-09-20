@@ -27,13 +27,12 @@ footer{
     text-align: center;
 }
 .attribution a { 
-    color: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 0%);
     text-decoration: none;
 }
 
 .container {
     display: grid;
-    grid-template-rows: "section-1 section-2 footer" ;
     grid-gap: 0;
     padding: 50px 20px 20px 20px;
 }
@@ -130,4 +129,39 @@ footer{
     text-decoration: none;
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+
+@media (min-width: 1024px) {
+    body {
+        margin-bottom: 0;
+    }
+    
+    .container {
+        display: grid;
+        grid-template: 
+        "section-1 section-2";
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        align-content: center;	
+
+    }
+
+    .section-1{
+        align-self: center;
+        text-align: left;
+        justify-self: center;
+        place-self: center;
+
+    }
+
+    .second-heading {
+        font-size: 36px;
+        
+    }
+
+    .section-2{
+        align-self: center;
+    }
+
 }
