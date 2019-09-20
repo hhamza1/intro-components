@@ -139,29 +139,36 @@ footer{
     
     .container {
         display: grid;
-        grid-template: 
-        "section-1 section-2";
         grid-template-columns: 50% 50%;
-        grid-gap: 10px;
-        align-content: center;	
+        align-content: center;
+        margin: auto;
+        height: 93vh;
 
     }
 
     .section-1{
         align-self: center;
         text-align: left;
-        justify-self: center;
-        place-self: center;
-
+        padding: 0 10%;
     }
 
     .second-heading {
-        font-size: 36px;
-        
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
     }
 
     .section-2{
         align-self: center;
+        padding: 0 15%;
+
+    }
+        
+    }
+
+        
     }
 
 }
