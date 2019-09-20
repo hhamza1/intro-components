@@ -13,28 +13,39 @@ body {
     color:  #fff;
 }
 
+a {
+    text-decoration: none;
+    color: hsl(154, 59%, 51%);
+}
+
+footer{
+    padding: 0 15px 15px 15px;
+}
 
 .attribution { 
     font-size: 11px;
-    text-align: center; 
+    text-align: center;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(248, 32%, 49%);
+    text-decoration: none;
 }
 
 .container {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    padding: 50px 20px;
+    grid-template-rows: "section-1 section-2 footer" ;
+    grid-gap: 0;
+    padding: 50px 20px 20px 20px;
 }
 
 .section-1{
     text-align: center;
-    margin: 15px;
+    margin: 0 10px;
+    margin-bottom: 20px;
 }
 
 .description {
-    padding: 15px 0;
+    padding-top: 10px;
 }
 
 .btn-trial {
@@ -59,4 +70,64 @@ body {
 .btn-trial:active {
     box-shadow: none;
     top: 6px;
+}
+
+.section-2__form {
+    background: #fff;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 6px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-input {
+    border: 1px solid hsl(246, 25%, 77%, .4);
+    font-family: inherit;
+    font-weight: 600;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    padding-left: 15px;
+    outline: none;
+}
+
+.btn-form {
+    background: hsl(154, 59%, 51%);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 1px hsla(154, 59%, 51%, 0.85);
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 24px;
+    outline: none;
+    margin: 15px 0;
+    padding: 15px 0;
+    position: relative;
+    top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.btn-form:active {
+    box-shadow: none;
+    top: 4px;
+}
+
+.agreement {
+    color: hsl(246, 25%, 77%);
+    font-size: 14px;
+    text-align: center;
+}
+
+.terms {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
 }
