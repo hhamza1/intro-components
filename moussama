@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Our first Web Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#F08080" background="images/bg-intro-desktop.png">
+
+  <h1><FONT face="Verdana" color="#FFFFFF">Learn to code by watching others</FONT></h1>
+  <p><FONT face="Verdana" color="#FFFFFF">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+    but understanding how developers think is invaluable.</FONT></p>
+  <button class="myButton" type="button" name="button" style="background-color:#9932CC"> <span class="try"> Try it free 7 days</span> then 20/mo. thereafter</button>
+    <div class=" form">
+      <form  action="index.html" method="post">
+        <input type="text" id="fname" name="firstname" placeholder="First name..">
+        <input type="text" id="fname" name="firstname" placeholder="Last name..">
+        <input type="text" id="fname" name="firstname" placeholder="Email..">
+        <input type="text" id="fname" name="firstname" placeholder="Password..">
+            <button class="trial" type="button" name="button">Claim your Free trial</button>
+
+      <p class="ending-text">By clicking the button, you are agreeing to our <a class="terms" href="#">Terms and Services</a> </p>
+        </form>
+      </div>
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">OOH</a>.
+    </p>
+  </footer>
+
+
+  <script src="js/app.js"></script>
+</body>
+</html>
