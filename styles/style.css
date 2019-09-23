@@ -63,7 +63,7 @@ footer{
     top: 0;
     text-align: center;
     width: 100%;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .btn-trial:active {
@@ -111,7 +111,7 @@ footer{
     text-transform: uppercase;
     letter-spacing: 2px;
     width: 100%;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .btn-form:active {
@@ -142,6 +142,7 @@ footer{
     font-size: 1.3rem;
     top: 6px;
     color: hsl(0, 100%, 74%);
+    opacity: 0;
 }
 
 .error-msg {
@@ -149,6 +150,11 @@ footer{
     color: hsl(0, 100%, 74%);
     font-size: 10px;
     right: 2px;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1 !important;
 }
 
 
