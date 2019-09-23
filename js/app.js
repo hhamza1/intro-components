@@ -1,31 +1,46 @@
-const fname = document.getElementsByClassName("firstName");
-const lname = document.getElementsByClassName("lastName");
-const email = document.getElementsByClassName("email");
-const pswd = document.getElementsByClassName("password");
 const form = document.getElementById("form");
+const email = document.querySelector("input[type=email]");
+const fname = document.querySelector("input[name=fname]");
+const lname = document.querySelector("input[name=lname]");
+const pswd = document.querySelector("input[name=pswd]");
+const emailError = document.querySelectorAll(".email");
+const fnameError = document.querySelectorAll(".firstName");
+const lnameError = document.querySelectorAll(".lastName");
+const pswdError = document.querySelectorAll(".password");
 
+let emailValidity = email.validity;
 
-/*Looks like it's not an email*/
-
-form.addEventListener("submit", function (event){
-    if(fname[0].children[0].value === "" && lname[0].children[0].value === "" && email[0].children[0].value === "" && pswd[0].children[0].value === "") {
-        fname[0].children[1].classList.add("show");
-        fname[0].children[2].classList.add("show");
-        lname[0].children[1].classList.add("show");
-        lname[0].children[2].classList.add("show");
-        email[0].children[1].classList.add("show");
-        email[0].children[2].classList.add("show");
-        pswd[0].children[1].classList.add("show");
-        pswd[0].children[2].classList.add("show");
-        event.preventDefault();
-
+const emailValidator = (input, validation) => {
+    if(!validation.valid || input.value === "") {
+        emailError.forEach(error => {
+            error.classList.add("show");
+        });
     }
+    else {
+        emailError.forEach(error => {
+            error.classList.remove("show");
+        });
+    }
+}
 
-    /* else if(email[0].children[0].value && (/(^\w.*@\w+\.\w)/).test(email[0].children[0].value)) {
-        event.preventDefault();
-        console.log("email invalid");
-    } */
-    
+const inputValidation = (input,inputError) => {
+    if(input.value === "") {
+        inputError.forEach(error => {
+            error.classList.add("show");
+        });
+    }
+    else {
+        inputError.forEach(error => {
+            error.classList.remove("show");
+        });
+    }
+}
+
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+     inputValidation(fname,fnameError);
+     inputValidation(lname,lnameError);
+     emailValidator(email,emailValidity);
+     inputValidation(pswd,pswdError);
 });
-
-
