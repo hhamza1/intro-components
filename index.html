@@ -5,34 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <script defer src="https://friconix.com/cdn/friconix.js"></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
+  <div class="container">
+    <div class="section-1">
+      <h2 class="second-heading">Learn to code by watching others</h2>
+      <p class="description">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+      </p>
+    </div>
 
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
+    <div class="section-2">
+    <button class="btn-trial"><strong>Try it free 7 days</strong> then<br/> $20/mo. thereafter</button>
+    <div class="section-2__form">
+      <form id="form" method="post" enctype="application/x-www-form-urlencoded">
+        <div class="input-group">
+            <input type="text" name="fname" class="form-input" placeholder="First Name " />
+            <i class="fi-ctluxl-exclamation-mark-rounded firstName"></i>
+            <span class="error-msg firstName">First Name cannot be empty</span>
+        </div>
+        <div class="input-group lastName">
+            <input type="text" name="lname" class="form-input" placeholder="Last Name "/>
+            <i class="fi-ctluxl-exclamation-mark-rounded lastName"></i>
+            <span class="error-msg lastName">Last Name cannot be empty</span>
+        </div>
+        <div class="input-group">
+            <input type="email" name="email" class="form-input" placeholder="Email Address"/>
+            <i class="fi-ctluxl-exclamation-mark-rounded email"></i>
+            <span class="error-msg email">Looks like it's not an email</span>
+        </div>
+        <div class="input-group password">
+            <input type="password" name="pswd" class="form-input" placeholder="Password"/>
+            <i class="fi-ctluxl-exclamation-mark-rounded password"></i>
+            <span class="error-msg password">Password cannot be empty</span>
+        </div>
+        <button class="btn-form" formnovalidate>Claim your free trial</button>
+      </form>
+      <p class="agreement">By clicking the button, you are agreeing to our <a href="#" class="terms">Terms and Services</a></p>
+    </div>
+    </div>
+  </div>
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      <br/>
+      Coded by <a href="https://github.com/hhamza1">Hamza HMITOU</a>
     </p>
   </footer>
-
-
   <script src="js/app.js"></script>
 </body>
 </html>
