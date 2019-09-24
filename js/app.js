@@ -8,6 +8,7 @@ const fnameError = document.querySelectorAll(".firstName");
 const lnameError = document.querySelectorAll(".lastName");
 const pswdError = document.querySelectorAll(".password");
 
+
 let emailValidity = email.validity;
 
 const emailValidator = (input, validation) => {
