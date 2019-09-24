@@ -13,10 +13,7 @@ body {
     color:  #fff;
 }
 
-a {
-    text-decoration: none;
-    color: hsl(154, 59%, 51%);
-}
+
 
 footer{
     padding: 0 15px 15px 15px;
@@ -161,6 +158,8 @@ footer{
 @media (min-width: 1024px) {
     body {
         margin-bottom: 0;
+        background-image: url('../images/bg-intro-desktop.png');
+
     }
     
     .container {
