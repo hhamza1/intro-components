@@ -1,47 +1,36 @@
 body {
     text-align: center;
     font-size: 17px;
-    margin: auto;
-    padding: 10px;
     color: white;
     background: rgb(255, 128, 128);
     background-image: url("../images/bg-intro-desktop.png");
-    height: 100%;
     width: 100%;
-    left: 0;
     top: 0;
-    overflow: hidden;
-    position: fixed;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 
-#leftbox {
+.leftbox {
     left: 15%;
     text-align: left;
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 32.5%;
 }
 
-#rightbox {
-    right: 15%;
-    text-align: center;
-    margin: auto;
+.rightbox {
+	right: 15%;
     border-radius: 25px;
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 32.5%;
 }
 
-#upbox {
+.upbox {
     background: RebeccaPurple;
     color: hsl(0, 0%, 100%);
     border-radius: 8px;
-    border-bottom: 1px solid;
     box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.3);
     width: 100%;
     padding-top: .5%;
@@ -49,9 +38,8 @@ body {
     font-size: 15px;
 }
 
-#downbox {
-    float: down;
-    background: hsl(0, 0%, 100%);
+.downbox {
+    background:hsl(0, 0%, 100%);
     border-radius: 8px;
     margin: 8px 0;
     width: 100%;
@@ -75,18 +63,17 @@ input[type=submit] {
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-#hypl {
+.hypl {
     text-decoration: none;
     color: rgb(240, 82, 119);
 }
 
-h1{
-	font-size: 50px; 
+h1 {
+    font-size: 50px;
     line-height: 50px;
     font-weight: bold;
 }
@@ -94,7 +81,7 @@ h1{
 footer {
     position: fixed;
     font-size: 14px;
-    text-align: center;
     bottom: 0;
-    width: 100%;
+	text-align: center;
+	width: 100%;
 }
